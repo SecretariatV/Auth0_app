@@ -3,20 +3,24 @@ import LoginButton from "../../buttons/loginButton";
 import LogoutButton from "../../buttons/logoutButton";
 import SignupButton from "../../buttons/signupButton";
 
-function NavBarButtons() {
+function MobileNavBarButtons() {
   const { isAuthenticated } = useAuth0();
 
   return (
-    <div className="nav-bar__buttons">
+    <div className="mobile-nav-bar__buttons">
       {!isAuthenticated && (
         <>
           <SignupButton />
           <LoginButton />
         </>
       )}
-      {isAuthenticated && <LogoutButton />}
+      {isAuthenticated && (
+        <>
+          <LogoutButton />
+        </>
+      )}
     </div>
   );
 }
 
-export default NavBarButtons;
+export default MobileNavBarButtons;
