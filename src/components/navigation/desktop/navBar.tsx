@@ -1,4 +1,5 @@
 import NavBarBrand from "./navBarBrand";
+import NavBarButtons from "./navBarButtons";
 import NavBarTabs from "./navBarTabs";
 
 function NavBar() {
@@ -7,6 +8,7 @@ function NavBar() {
       <nav className="nav-bar">
         <NavBarBrand />
         <NavBarTabs />
+        <NavBarButtons />
       </nav>
     </div>
   );
