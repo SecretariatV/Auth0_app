@@ -1,5 +1,6 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import PageLayout from "./pageLayout";
+import CodeSnippet from "../components/codeSnippet";
+import PageLayout from "../components/pageLayout";
 
 function ProfilePage() {
   const { user } = useAuth0();
