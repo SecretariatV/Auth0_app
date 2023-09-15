@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
-import NavBar from "./navigation/desktop/navBar";
-import MobileNavBar from "./navigation/mobile/mobileNavBar";
-import PageFooter from "./pageFooter";
+import NavBar from "../components/navigation/desktop/navBar";
+import MobileNavBar from "../components/navigation/mobile/mobileNavBar";
+import PageFooter from "../components/pageFooter";
 
 function PageLayout({ children }: { children: ReactNode }) {
   return (
