@@ -15,7 +15,7 @@ function LoginButton() {
   };
 
   return (
-    <button className="button_login" onClick={handleLogin}>
+    <button className="button__login" onClick={handleLogin}>
       Log In
     </button>
   );
