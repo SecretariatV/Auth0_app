@@ -9,13 +9,15 @@ interface AuthConfigProps {
 function AuthConfig({ children }: AuthConfigProps) {
   const navigate = useNavigate();
 
-  const domain = import.meta.env.REACT_APP_AUTH0_DOMAIN as string;
-  const clientId = import.meta.env.REACT_APP_AUTH0_CLIENT_ID as string;
-  const redirectUri = import.meta.env.REACT_APP_AUTH0_CALLBACK_URL as string;
+  const domain = import.meta.env.VITE_AUTH0_DOMAIN as string;
+  const clientId = import.meta.env.VITE_AUTH0_CLIENT_ID as string;
+  const redirectUri = import.meta.env.VITE_AUTH0_CALLBACK_URL as string;
 
   const onRedirectCallback = (appState: AppState | undefined) => {
     navigate(appState?.returnTo || window.location.pathname);
   };
+
+  console.log("domain", domain);
 
   return (
     <Auth0Provider
