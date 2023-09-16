@@ -10,6 +10,7 @@ function LoginButton() {
       },
       authorizationParams: {
         prompt: "login",
+        connection: "google-oauth2",
       },
     });
   };
